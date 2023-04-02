@@ -1,17 +1,17 @@
-###API for YaTube
+API for YaTube
 
 Описание
 Api для социальной сети yatube https://github.com/LiubovPerchuk/hw05_final
 
 Как запустить проект:
-```
+
 1. Клонируем репозиторий и заходим в папку с проектом
-    ```
+   
     git@github.com:LiubovPerchuk/api_final_yatube.git
-    ```
-    ```
+    
+    
     cd api_yatube
-    ```
+    
 2. Создаем и активируем виртуальное окружение:
     ```
     python3 -m venv env
