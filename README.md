@@ -1,7 +1,9 @@
 ## API for YaTube
 
+
 ### Описание
 Api для социальной сети yatube https://github.com/LiubovPerchuk/hw05_final
+
 
 ### Как запустить проект:
 
@@ -11,6 +13,7 @@ Api для социальной сети yatube https://github.com/LiubovPerchuk
     
     
     cd api_yatube
+    
     
 #### 2. Создаем и активируем виртуальное окружение:
     
@@ -29,22 +32,22 @@ Api для социальной сети yatube https://github.com/LiubovPerchuk
     
 
 #### 3. Устанавливаем зависимости из файла requirements.txt:
-    ```
+    
     python3 -m pip install --upgrade pip
-    ```
-    ```
+    
     pip install -r requirements.txt
-    ```
+    
 
 #### 4. Выполняем миграции:
-    ```
+    
     python3 manage.py migrate
-    ```
-
+    
+    
 #### 5. Запускаем проект:
 
     
     python3 manage.py runserver
+    
     
 ### Требования
     
