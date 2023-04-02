@@ -1,4 +1,4 @@
-## API for YaTube
+## API for YaTube 
 
 
 ### Описание
@@ -12,7 +12,7 @@ Api для социальной сети yatube https://github.com/LiubovPerchuk
     git@github.com:LiubovPerchuk/api_final_yatube.git
     
     
-    cd api_yatube
+    cd yatube_api
     
     
 #### 2. Создаем и активируем виртуальное окружение:
