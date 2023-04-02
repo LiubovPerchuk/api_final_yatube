@@ -1,6 +1,6 @@
-### API for YaTube
+## API for YaTube
 
-## Описание
+### Описание
 Api для социальной сети yatube https://github.com/LiubovPerchuk/hw05_final
 
 Как запустить проект:
