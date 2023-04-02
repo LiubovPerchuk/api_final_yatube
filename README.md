@@ -24,11 +24,11 @@ Api для социальной сети yatube https://github.com/LiubovPerchuk
 
    * Если у вас windows
 
-    ```
+    
     source env/scripts/activate
-    ```
+    
 
-3. Устанавливаем зависимости из файла requirements.txt:
+#### 3. Устанавливаем зависимости из файла requirements.txt:
     ```
     python3 -m pip install --upgrade pip
     ```
@@ -36,18 +36,18 @@ Api для социальной сети yatube https://github.com/LiubovPerchuk
     pip install -r requirements.txt
     ```
 
-4. Выполняем миграции:
+#### 4. Выполняем миграции:
     ```
     python3 manage.py migrate
     ```
 
-5. Запускаем проект:
+#### 5. Запускаем проект:
 
-    ```
+    
     python3 manage.py runserver
-    ```
+    
 ### Требования
-    ```
+    
     Django==3.2.16
     pytest==6.2.4
     pytest-pythonpath==0.7.3
@@ -57,4 +57,4 @@ Api для социальной сети yatube https://github.com/LiubovPerchuk
     Pillow==9.3.0
     PyJWT==2.1.0
     requests==2.26.0
-    ```
+    
