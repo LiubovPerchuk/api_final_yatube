@@ -14,14 +14,14 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
     """Endpoint для получения группы."""
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
-    permission_classes = [IsAuthenticatedOrReadOnly]
+    permission_classes = (IsAuthenticatedOrReadOnly,)
 
 
 class PostViewSet(viewsets.ModelViewSet):
     """Endpoint для получения, создания, изменения и удаления постов."""
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-    permission_classes = [IsAuthenticatedOrReadOnly, AuthorOrReadOnly]
+    permission_classes = (IsAuthenticatedOrReadOnly, AuthorOrReadOnly)
     pagination_class = LimitOffsetPagination
 
     def perform_create(self, serializer):
@@ -32,7 +32,7 @@ class PostViewSet(viewsets.ModelViewSet):
 class CommentViewSet(viewsets.ModelViewSet):
     """Endpoint для получения, создания, изменения и удаления комментариев."""
     serializer_class = CommentSerializer
-    permission_classes = [IsAuthenticatedOrReadOnly, AuthorOrReadOnly]
+    permission_classes = (IsAuthenticatedOrReadOnly, AuthorOrReadOnly)
 
     def get_queryset(self):
         """Метод возвращения всех комментариев к посту."""
@@ -51,7 +51,7 @@ class FollowViewSet(mixins.CreateModelMixin,
                     viewsets.GenericViewSet):
     """Endpoint для получения, создания, изменения и удаления подписок."""
     serializer_class = FollowSerializer
-    permission_classes = [IsAuthenticated, AuthorOrReadOnly]
+    permission_classes = (IsAuthenticated, AuthorOrReadOnly)
     filter_backends = (filters.SearchFilter,)
     search_fields = ("following__username", )
 
