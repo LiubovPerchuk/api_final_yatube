@@ -1,4 +1,5 @@
-## API for YaTube ![yatube](https://user-images.githubusercontent.com/120508656/229374639-8dccd18a-feff-4c54-9ed9-dce0a28f066c.JPG)  
+##  ![yatube](https://user-images.githubusercontent.com/120508656/229375003-27d9b0fd-16be-41a7-b43d-6bec48625f87.JPG)   API for YaTube
+   
 
 ### Описание
 Api для социальной сети yatube https://github.com/LiubovPerchuk/hw05_final
