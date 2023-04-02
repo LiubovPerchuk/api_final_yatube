@@ -14,7 +14,7 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
     """Endpoint для получения группы."""
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
-    permission_classes = (IsAuthenticatedOrReadOnly,)
+    permission_classes = [IsAuthenticatedOrReadOnly]
 
 
 class PostViewSet(viewsets.ModelViewSet):
@@ -51,7 +51,7 @@ class FollowViewSet(mixins.CreateModelMixin,
                     viewsets.GenericViewSet):
     """Endpoint для получения, создания, изменения и удаления подписок."""
     serializer_class = FollowSerializer
-    permission_classes = (IsAuthenticated, AuthorOrReadOnly)
+    permission_classes = [IsAuthenticated, AuthorOrReadOnly]
     filter_backends = (filters.SearchFilter,)
     search_fields = ("following__username", )
 
